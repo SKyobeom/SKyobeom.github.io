@@ -1,0 +1,100 @@
+/* 기본 설정 및 폰트 */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+}
+
+/* 네비게이션 메뉴 (모바일) */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  background: #444;
+}
+
+/* 네비게이션 메뉴 (데스크탑) */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    position: static;
+    background: none;
+    border: none;
+  }
+  .nav-menu li a {
+    padding: 10px 15px;
+  }
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 섹션 */
+section {
+  padding: 20px;
+}
+
+/* 제목 스타일 */
+h1, h2, h3 {
+  color: #333;
+}
